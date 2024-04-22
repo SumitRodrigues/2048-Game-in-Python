@@ -21,7 +21,7 @@ FONT_COLOR = (119, 110, 101)
 FONT = pygame.font.SysFont("comicsans", 60, bold=True)
 MOVE_VEL = 20
 
-WINDOW = pygame.display.set_model((WIDTH, HEIGHT))
+WINDOW = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("2048")
 
 def main(window):
@@ -35,6 +35,8 @@ def main(window):
             if event.type == pygame.QUIT:
                 run = False
                 break
+
+    pygame.quit()
 
 if __name__ == "__main__":
     main(WINDOW)
