@@ -6,7 +6,7 @@ This repository contains a Python implementation of the popular game "2048" usin
 
 ## Prerequisites
 
-Before running the game, ensure you have Python and Pygame installed on your machine. Python can be installed from [python.org](https://www.python.org/downloads/), and Pygame can be installed via pip:
+Before running the game, install Python and Pygame on your machine. Python can be installed from [python.org](https://www.python.org/downloads/), and Pygame can be installed via pip:
 
 ```bash
 pip install pygame
@@ -17,7 +17,7 @@ pip install pygame
 Clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/your-username/2048-Game-in-Python.git
+git clone https://github.com/SumitRodrigues/2048-Game-in-Python.git
 ```
 
 Navigate into the project directory:
