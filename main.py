@@ -84,15 +84,37 @@ def draw(window, tiles):
     window.fill(BACKGROUND_COLOR)
 
     for tile in tiles.values():
-        tile.draw()
+        tile.draw(window)
 
     draw_grid(window)
 
     pygame.display.update()
 
+def get_random_pos(tiles):
+    row = None
+    col = None
+    while True:
+        row = random.randrange(0, ROWS)
+        col = random.randrange(0, COLS)
+
+        if f"{row}{col}" not in tiles:
+            break
+
+    return row, col
+
+def generate_tiles():
+    tiles = {}
+    for _ in range(2):
+        row, col = get_random_pos(tiles)
+        tiles[f"{row}{col}"] = Tile(2, row, col)
+
+    return tiles
+
 def main(window):
     clock = pygame.time.Clock()
     run =  True
+
+    tiles = generate_tiles()
 
     while run:
         clock.tick(FPS)
@@ -102,7 +124,7 @@ def main(window):
                 run = False
                 break
 
-        draw(window)    
+        draw(window, tiles)    
 
     pygame.quit()
 
