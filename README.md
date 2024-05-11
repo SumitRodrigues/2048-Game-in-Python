@@ -1,4 +1,3 @@
-Here's a GitHub README file tailored for your Python implementation of the 2048 game using Pygame. This README provides a concise description of the game, instructions for setting up and running the code, and mentions basic controls.
 
 ```markdown
 # 2048 Game in Python with Pygame
